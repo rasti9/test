@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-hello-world",
+  "version": "0.1.0",
+  "description": "test",
+  "cordova": {
+    "id": "ru.test.helloworld",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.wdf.sap.corp/i337790/test"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "TR",
+  "license": "ISC"
+}

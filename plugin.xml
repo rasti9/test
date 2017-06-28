@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ru.test.helloworld" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<name>cordova-plugin-hello-world</name>
+    
+<engines>
+<engine name="cordova" version=">=3.4.0"/>
+</engines>
+    
+ <asset src="www/cordova-plugin-hello-world.js" target="js/cordova-plugin-hello-world.js"/>
+    
+<js-module name="cordova-plugin-hello-world" src="www/cordova-plugin-hello-world.js">    
+<clobbers target="cordova.plugins.cordova-plugin-hello-world" />    
+</js-module>
+    
+<platform name="android">
+    
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="cordova-plugin-hello-world">
+    
+<param name="android-package" value="ru.test.helloworld.cordova-plugin-hello-world" /></feature>
+    
+</config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    
+<source-file src="src/android/cordova-plugin-hello-world.java" target-dir="src/ru/test/helloworld/cordova-plugin-hello-world" />
+    
+</platform>
+    
+</plugin>
